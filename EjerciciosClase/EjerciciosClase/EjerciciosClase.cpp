@@ -131,7 +131,7 @@ int main()
 //Problem 4. Un n´umero perfecto es aquel n´umero el cual la suma de sus m´ultiplos es igual al mismo n´umero.Por ejemplo : 6 es un n´umero perfecto, porque sus m´ultiplos son : 1, 2, 3 y 6 = 1 + 2 + 3.
 //Implemente un programa que solicite un n´umero y evalue si dicho n´umero es un n´umero perfecto.
 
-/*
+
 int main()
 {
 	int numero;
@@ -160,7 +160,7 @@ int main()
 	}
 	return 0;
 }
-*/
+
 
 
 
@@ -170,7 +170,7 @@ int main()
 
 //Problem 5. Implemente un programa que solicite un n´umero n e imprima todos los n´umeros perfectos menores a n.
 
-
+/*
 bool esPerfecto(int n, int suma = 0) 
 {
 	for (int i = 1; i < n; i++) 
@@ -201,12 +201,7 @@ int main()
 	}
 	return 0;
 }
-*
-
-
-
-
-
+*/
 
 
 
