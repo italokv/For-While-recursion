@@ -131,7 +131,7 @@ int main()
 //Problem 4. Un n´umero perfecto es aquel n´umero el cual la suma de sus m´ultiplos es igual al mismo n´umero.Por ejemplo : 6 es un n´umero perfecto, porque sus m´ultiplos son : 1, 2, 3 y 6 = 1 + 2 + 3.
 //Implemente un programa que solicite un n´umero y evalue si dicho n´umero es un n´umero perfecto.
 
-
+/*
 int main()
 {
 	int numero;
@@ -160,7 +160,7 @@ int main()
 	}
 	return 0;
 }
-
+*/
 
 
 
@@ -170,11 +170,15 @@ int main()
 
 //Problem 5. Implemente un programa que solicite un n´umero n e imprima todos los n´umeros perfectos menores a n.
 
-/*
-bool esPrimo(int n, int suma = 0) {
-	for (int i = 1; i < n; i++) {
+
+bool esPerfecto(int n, int suma = 0) 
+{
+	for (int i = 1; i < n; i++) 
+	{
 		if (!(n % i))
+		{
 			suma += i;
+		}
 	}
 	return suma == n;
 }
@@ -182,16 +186,22 @@ bool esPrimo(int n, int suma = 0) {
 int main()
 {
 	//imprimir todos los numeros perfectos menores a n
+
 	int n;
+
 	cout << "Ingrese un numero: ";
 	cin >> n;
-	for (int i = 1; i < n; i++) {
-		if (esPrimo(i))
+
+	for (int i = 1; i < n; i++) 
+	{
+		if (esPerfecto(i))
+		{
 			cout << " " << i;
+		}
 	}
 	return 0;
 }
-*/
+*
 
 
 
@@ -201,21 +211,22 @@ int main()
 
 
 //Problem 6. Los factores primos de 13195 son 5, 7, 13 y 29. ¿Cu´al es el mayor factor primo de 600851475143 ?
+
 /*
 int main()
 {
-	int a = 2; 
-	long long b = 600851475143;
+	int cont = 2; 
+	long long numero = 600851475143;
 	
-	while (b > a) 
+	while (numero > cont) 
 	{
-		while (b % a == 0) 
+		while (numero % cont == 0) 
 		{
-			b /= a;
+			numero /= cont;
 		}
-		a++;
+		cont++;
 	}
-	cout << a << endl;
+	cout << cont << endl;
 
 	return 0;
 }
